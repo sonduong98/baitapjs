@@ -16,7 +16,9 @@ async function getData() {
     </div>
     <div>
         <span>Nhiệt độ : </span>
-        <span class="deg">${data.list[i].main.temp_max - 273}</span>
+        <span class="deg">${(data.list[i].main.temp_max - 273).toFixed(
+          2
+        )}</span>
     </div>
     <div>
         <span>Tốc độ gió : </span>
