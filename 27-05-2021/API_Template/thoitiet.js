@@ -8,8 +8,11 @@ async function getData() {
   for (let i = 0; i < data.list.length; i++) {
     html += `<div class="item">
     <div>
-        <span>Thành phố : </span>
-        <span id="city">Hà nội</span>
+        <span>Thành phố :Hà nội </span>
+    </div>
+    <div>
+        <span>Thời gian : </span>
+        <span class="date">${data.list[i].dt_txt}</span>
     </div>
     <div>
         <span>Nhiệt độ : </span>
